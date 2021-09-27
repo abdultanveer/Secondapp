@@ -11,6 +11,7 @@ import android.widget.SimpleCursorAdapter
 import android.content.pm.PackageManager
 
 import android.os.Build
+import android.os.PersistableBundle
 import android.provider.CallLog
 import android.util.Log
 import android.view.View
@@ -58,6 +59,11 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
+        super.onSaveInstanceState(outState, outPersistentState)
+    }
+
 
     private fun setupListView() {
         //var listview: ListView = findViewById(R.id.cpList)
