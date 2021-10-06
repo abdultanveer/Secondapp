@@ -190,4 +190,10 @@ public class LocationActivity extends AppCompatActivity {
             }
         }
     }
+
+    public void clickHandler(View view) {
+        Intent homeP = new Intent("ineed.water.abdul");
+        startActivity(homeP);
+
+    }
 }
